@@ -13,29 +13,29 @@
 
 // EXAMPLES
 
-      const str = "mihir"
-      console.log(str);
+    //   const str = "mihir"
+    //   console.log(str);
 
-      const num = 234
-      console.log(num);
+    //   const num = 234
+    //   console.log(num);
 
-      const bool = true
-      console.log(bool);
+    //   const bool = true
+    //   console.log(bool);
 
-      const empty = null
-      console.log(empty);
+    //   const empty = null
+    //   console.log(empty);
 
-      let notdefined;
-      console.log(notdefined);
+    //   let notdefined;
+    //   console.log(notdefined);
 
-      const id1 = Symbol('234')
-      const id2 = Symbol('234')
+    //   const id1 = Symbol('234')
+    //   const id2 = Symbol('234')
 
-      console.log(id1 == id2);
+    //   console.log(id1 == id2);
     
-      const bigNum = 34985927992398879294392372n
-      console.log(typeof(bigNum));
-      console.log(bigNum);
+    //   const bigNum = 34985927992398879294392372n
+    //   console.log(typeof(bigNum));
+    //   console.log(bigNum);
 
 
 
@@ -49,24 +49,54 @@
 
 //ARRAYS
 
-const arr = ["maa","pita","behen","bhai"];
-console.log(arr);
+// const arr = ["maa","pita","behen","bhai"];
+// console.log(arr);
 
-//OBJECTS
+// //OBJECTS
 
-let obj = {
-     name: "mihir",
-     surname: "solanki",
-}
+// let obj = {
+//      name: "mihir",
+//      surname: "solanki",
+// }
 
-console.log(obj);
-//FUNCTIONS
+// console.log(obj);
+// //FUNCTIONS
 
-const myFun = function() {
+// const myFun = function() {
 
-    console.log("Hello");
+//     console.log("Hello");
     
+// }
+
+
+// console.log(myFun);
+
+//###################################################################################################################################/
+
+// THERE ARE TWO TYPES OF MEMORY IN JAVACRIPT
+// 1.STACK USED FOR PRIMITIVE DATA TYPES , IN STACK MEMEORY YOU WILL GET COPY OF THAT VLAUE
+// 2.HEAP USED FOR NON-PROIMITIVE TYPES,IN HEAP MEMORY YOU WILL GET REFERNCE ADDRESS
+
+// EXAMPLES
+
+let myname = "mihir"
+
+let nickname = myname
+
+nickname = "mohit"
+
+console.log(myname);
+console.log(nickname);
+
+
+let parmanent_address={
+    street: "motipura",
+    houseno: 234,
 }
 
+let current_address = parmanent_address
 
-console.log(myFun);
+current_address.street = "nai avar gali"
+
+console.log(current_address.street);
+console.log(parmanent_address.street);
