@@ -39,12 +39,39 @@
 
 //creating array and inserting into function
 
-const arr = [1,2,34,5,67,8,8,9]
+// const arr = [1,2,34,5,67,8,8,9]
 
-function fetchValueFromArray(val) {
+// function fetchValueFromArray(val) {
 
-    return val[4]
+//     return val[4]
     
+// }
+
+// console.log(fetchValueFromArray(arr));
+
+
+//ADDITION OF TWO NUMBERS
+
+// function AdditionOfNumber(num1,num2) {
+
+//     return num1 + num2
+    
+// }
+
+// ans = AdditionOfNumber(4,2)
+
+// console.log(ans);
+
+function EnterUserName(namepls) {
+    if(namepls === undefined){
+        console.log("enter correct name only");
+        return
+    }
+    return `Hello!, ${namepls}`
 }
 
-console.log(fetchValueFromArray(arr));
+console.log(EnterUserName("Mihir"));
+
+
+
+console.log(EnterUserName());
